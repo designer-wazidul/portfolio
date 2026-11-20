@@ -221,6 +221,54 @@
             color: #4A4A4A;
         }
 
+        /* --- Hero CTA & Availability Badge --- */
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: 36px;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border: 2px solid #1A3C27;
+            border-radius: 4px;
+            background-color: transparent;
+            color: #1A3C27;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.01em;
+            transition: background-color 0.25s ease, color 0.25s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #1A3C27;
+            color: #F6F3EE;
+        }
+
+        .availability-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #4A4A4A;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #39FF14;
+            border: 1.5px solid #A3E899;
+            box-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
+            flex-shrink: 0;
+        }
+
         .scroll-down-btn {
             position: absolute;
             right: 5%;
@@ -580,12 +628,20 @@
 
     <section id="home">
         <div class="home-content reveal">
-            <h1 class="tagline">I take products from concept to<strong> dev-ready</strong> in a fast-moving environment</h1>
-            <p class="body-text">I'm a UI/UX designer. I find direction fast, even when the goal isn't clear yet. I build with scalable design systems, so devs can extend it without guesswork.</p>
+            <h1 class="tagline">I turn <strong>rough ideas </strong>into simple, clear interfaces.</h1>
+            <p class="body-text">I’m a UI/UX designer focused on MVPs and early-stage startups. I use proven usability principles so user flows feel familiar and mistakes are easy to recover from.</p>
+            
+            <div class="hero-actions">
+                <a href="#contact" class="cta-btn">Get in touch</a>
+                <div class="availability-badge">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <span>Open to full-time &amp; contract roles</span>
+                </div>
+            </div>
         </div>
         
         <a href="#work" class="scroll-down-btn" aria-label="Scroll to Work">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 4v16"></path>
                 <path d="M18 14l-6 6-6-6"></path>
             </svg>
@@ -626,8 +682,8 @@
         <a href="case-study-1.html" class="case-study reveal">
             <div class="cs-left">
                 <span class="cs-num">01</span>
-                <h2 class="cs-title">An <strong>AI stylist</strong> that removes the outfit decision for busy professionals.</h2>
-                <p class="cs-summary">From a single insight to a clickable MVP in 2 weeks: one core flow, with variables, specs, components, and a micro-interaction video ready for dev.</p>
+                <h2 class="cs-title">The first<strong> decision </strong>of the day shouldn’t be the hardest</h2>
+                <p class="cs-summary">Getting dressed is the first decision of the day, and it quietly spends energy professionals need later. An AI stylist reads your wardrobe, calendar, and weather and surfaces one ready-to-wear outfit. It doesn’t speed up the choice; it removes it.</p>
                 <div class="cs-link">
                     View case study
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -647,8 +703,8 @@
         <a href="case-study-2.html" class="case-study reveal">
             <div class="cs-left">
                 <span class="cs-num">02</span>
-                <h2 class="cs-title">A <strong>logistics dashboard</strong> that replaces spreadsheets and free tracking tools for dispatchers.</h2>
-                <p class="cs-summary">Designed from scratch in 10 days. Handed off with a prototype video, components, and variants.</p>
+                <h2 class="cs-title">From spreadsheets to <strong>one dashboard</strong></h2>
+                <p class="cs-summary">A startup outgrew spreadsheets and free tracking tools. I locked the design system upfront, split one overloaded page into a summary Dashboard and a detailed CRM.</p>
                 <div class="cs-link">
                     View case study
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -668,8 +724,8 @@
         <a href="case-study-3.html" class="case-study reveal">
             <div class="cs-left">
                 <span class="cs-num">03</span>
-                <h2 class="cs-title"><strong>Marketing site</strong> that gets visitors to try Novelist, an AI writing tool.</h2>
-                <p class="cs-summary">Dev-ready in 10 days: variables, components, three micro-interaction videos, and a full prototype video.</p>
+                <h2 class="cs-title">A <strong>Marketing website</strong> for an AI writing tool built for novelists.</h2>
+                <p class="cs-summary">An early-stage startup built an AI writing tool just for novel writers and needed a marketing website to introduce it. I designed a simple, clear site that explains what it does.</p>
                 <div class="cs-link">
                     View case study
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
